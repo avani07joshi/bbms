@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Signup - Blood Bank Management System</title>
+</head>
+<body>
+    <header>
+        <h1>Blood Bank Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donor.html">Donors</a></li>
+                <li><a href="receiver.html">Receivers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ... (previous code) ... -->
+
+<main>
+    <section>
+        <h2>Signup</h2>
+        <form id="signupForm" action="#" method="post" onsubmit="return validateSignupForm()">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Add more signup-specific fields as needed -->
+
+            <button type="submit">Signup</button>
+        </form>
+    </section>
+</main>
+
+<script>
+    function validateSignupForm() {
+        var firstName = document.getElementById("firstName").value;
+        var lastName = document.getElementById("lastName").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        // Perform simple validation (add more complex validation as needed)
+        if (firstName === "" || lastName === "" || email === "" || password === "") {
+            alert("Please fill in all required fields.");
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
+<!-- ... (previous code) ... -->
+
+
+    <footer>
+        <!-- Footer content (same as previous example) -->
+    </footer>
+</body>
+</html>

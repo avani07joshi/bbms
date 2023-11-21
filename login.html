@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login - Blood Bank Management System</title>
+</head>
+<body>
+    <header>
+        <h1>Blood Bank Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donor.html">Donors</a></li>
+                <li><a href="receiver.html">Receivers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ... (previous code) ... -->
+    
+
+
+<main>
+    <section>
+        <h2>Login</h2>
+        <form id="loginForm" action="#" method="post" onsubmit="return validateLoginForm()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+</main>
+
+
+
+
+
+
+<script>
+    function validateLoginForm() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Perform simple validation (add more complex validation as needed)
+        if (username === "" || password === "") {
+            alert("Please enter both username and password.");
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
+<!-- ... (previous code) ... -->
+s
+
+    <footer>
+        <!-- Footer content (same as previous example) -->
+    </footer>
+</body>
+</html>

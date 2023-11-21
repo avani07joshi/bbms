@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Dashboard - Blood Bank Management System</title>
+</head>
+<body>
+    <header>
+        <h1>Blood Bank Management System</h1>
+        <nav>
+            <ul>
+                <!-- Add navigation links -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Dashboard</h2>
+            <canvas id="bloodStockChart" width="400" height="200"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content (same as previous examples) -->
+    </footer>
+
+    <script>
+        // Sample data for blood stock chart
+        var bloodStockData = {
+            labels: ["O+", "A+", "B+", "AB+", "O-", "A-", "B-", "AB-"],
+            datasets: [{
+                label: 'Blood Stock',
+                data: [50, 30, 40, 20, 10, 5, 15, 8],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        };
+
+        var ctx = document.getElementById('bloodStockChart').getContext('2d');
+        var bloodStockChart = new Chart(ctx, {
+            type: 'bar',
+            data: bloodStockData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
