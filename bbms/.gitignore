@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+bbms/node_modules/
+# project/jobportal/node_modules/
+# classroom/react/node_modules/
