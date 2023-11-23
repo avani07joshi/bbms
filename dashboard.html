@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Dashboard - Blood Bank Management System</title>
 </head>
+
 <body>
     <header>
         <h1>Blood Bank Management System</h1>
@@ -40,6 +42,11 @@
                 borderWidth: 1
             }]
         };
+        var bloodStockData={
+            labels:["O+","A+"]
+        }
+
+
 
         var ctx = document.getElementById('bloodStockChart').getContext('2d');
         var bloodStockChart = new Chart(ctx, {
@@ -55,4 +62,5 @@
         });
     </script>
 </body>
+
 </html>
